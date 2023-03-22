@@ -1,0 +1,5 @@
+<ul class = "list-group" cdkDropList (cdkDropListDropped)="onDropeed($event)"> <!-- cdkDropList necesario para habilitar el drag y drop -->
+  <li *ngFor="let dat of lista" class = "list-group-item" cdkDrag> <!-- cdkDrag necesario para habilitar el drag y drop -->
+    {{dat.nombre}}
+  </li>
+</ul>
